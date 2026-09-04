@@ -1,0 +1,16 @@
+.view-header-title-parent {
+	width: 0;
+	transition: width 0.25s var(--emerald-smooth-timing);
+}
+
+.view-header-title-parent * {
+	color: var(--text-faint) !important;
+}
+
+.view-header-title-container:hover .view-header-title-parent {
+	width: min-content;
+}
+
+html {
+  	interpolate-size: allow-keywords;
+}
