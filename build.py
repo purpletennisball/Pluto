@@ -29,6 +29,16 @@ def appendFile(snippetName):
 		themeCSS = themeCSS + f"/* {snippetName} */\n"
 		themeCSS = themeCSS + f"{file.read()}\n\n"
 
+def writeBuildContents(basePath: str):
+	global themeCSS
+	global manifest
+	themeLocation = os.path.join(basePath, "theme.css")
+	manifestLocation = os.path.join(basePath, "manifest.json")
+	with open(themeLocation, 'w', encoding='utf-8') as file:
+			file.write(themeCSS)
+	with open(manifestLocation, 'w', encoding='utf-8') as file:
+		json.dump(manifest, file)
+
 folderContents = os.listdir(".")
 snippets = []
 
@@ -47,22 +57,11 @@ for prioritySnippet in config["order"]:
 for snippet in snippets:
 	appendFile(snippet)
 
-with open(f'{basePath}/theme.css', 'w', encoding='utf-8') as file:
-    file.write(themeCSS)
-
-with open(f'{basePath}/manifest.json', 'w', encoding='utf-8') as file:
-    json.dump(manifest, file)
+writeBuildContents(basePath)
 
 print("Theme built successfully")
 
 if duplicateThemeDestination:
 	print(f"Duplicating theme to {duplicateThemeDestination}")
-	themeLocation = os.path.join(duplicateThemeDestination, "theme.css")
-	manifestLocation = os.path.join(duplicateThemeDestination, "manifest.json")
-
-	with open(themeLocation, 'w', encoding='utf-8') as file:
-		file.write(themeCSS)
-	with open(manifestLocation, 'w', encoding='utf-8') as file:
-		json.dump(manifest, file)
-
+	writeBuildContents(duplicateThemeDestination)
 	print("Theme duplicated successfully")
