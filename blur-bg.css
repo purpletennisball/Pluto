@@ -6,8 +6,6 @@
 	opacity: 100% !important;
 }
 
-.modal {
-	animation-name: slideIn;
-	animation-timing-function: ease-out;
-	animation-duration: 300ms;
+body {
+	--background-modifier-cover: rgba(0,0,0,0.3) !important;
 }
