@@ -16,11 +16,11 @@
 
 body {
 	--status-bar-radius: var(--radius-xl) !important;
-	--status-bar-background: var(--emerald-background-secondary);
-	--status-bar-border-width: 2px;
-	--status-bar-border-color: var(--emerald-border-secondary);
-	--status-bar-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
-	--status-bar-blur: var(--large-blur);
+	--status-bar-background: var(--emerald-note-overlay-background);
+	--status-bar-border-width: var(--emerald-note-overlay-border-width);
+	--status-bar-border-color: var(--emerald-note-overlay-border-color);
+	--status-bar-shadow: var(--emerald-note-overlay-shadow);
+	--status-bar-blur: var(--emerald-note-overlay-blur);
 }
 
 .status-bar-item {

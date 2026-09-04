@@ -1,3 +1,11 @@
+body {
+	--floating-buttons-background: var(--emerald-note-overlay-background);
+	--floating-buttons-border-width: var(--emerald-note-overlay-border-width);
+	--floating-buttons-border-color: var(--emerald-note-overlay-border-color);
+	--floating-buttons-shadow: var(--emerald-note-overlay-shadow);
+	--floating-buttons-blur: var(--large-blur);
+}
+
 .view-header {
 	background: transparent !important;
 	position: absolute;
@@ -21,7 +29,12 @@
 
 .view-header-title-container, .view-header-left, .view-actions {
 	border-radius: var(--radius-xl);
-	backdrop-filter: var(--large-blur);
+	backdrop-filter: var(--floating-buttons-blur);
+	background-color: var(--floating-buttons-background);
+	border-width: var(--floating-buttons-border-width);
+	border-color: var(--floating-buttons-border-color);
+	border-style: solid;
+	box-shadow: var(--floating-buttons-shadow);
 	margin: 4px;
 }
 
