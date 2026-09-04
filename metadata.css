@@ -1,16 +1,11 @@
-.metadata-property-key-input {
-	font-weight: 600 !important;
-}
-
-.metadata-property-key-input, .metadata-property-value, .metadata-properties-title, .multi-select-pill-content, .tag-pane-tag {
-	font-variation-settings: "wdth" 125;
+body {
+	--properties-title-text-transform: uppercase;
+	--properties-title-color: var(--text-faint);
+	--properties-title-font-size: var(--font-ui-small);
 }
 
 .metadata-properties-title {
-	font-weight: 800;
-	text-transform: uppercase;
-}
-
-.multi-select-pill-content, .tag-pane-tag {
-	text-transform: uppercase;
+	text-transform: var(--properties-title-text-transform);
+	color: var(--properties-title-color);
+	font-size: var(--properties-title-font-size);
 }
