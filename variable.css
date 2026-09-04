@@ -17,7 +17,6 @@ body {
 
 	--menu-background: rgb(from var(--background-secondary) r g b / 0.5);
 	--menu-border-color: rgb(from var(--background-modifier-border-hover) r g b / 0.5);
-	--background-modifier-message: rgba(0,0,0,0.3) !important;
 	--emerald-background-secondary: rgba(var(--background-secondary), 0.5);
 
 	--metadata-label-width: 12em;
@@ -27,11 +26,16 @@ body {
 	--background-primary: black !important;
 	--background-secondary: black !important;
 	--background-secondary-alt: black !important;
+	--background-modifier-message: rgba(0,0,0,0.5) !important;
 
+	--small-blur: blur(4px) saturate(1.25) brightness(0.75);
 	--large-blur: blur(20px) saturate(1.5) brightness(0.5);
 }
 
 .theme-light {
+	--background-modifier-message: rgba(255,255,255,0.3) !important;
+
+	--small-blur: blur(4px) saturate(1.1) brightness(1.1);
 	--large-blur: blur(20px) saturate(1.5) brightness(1.5);
 }
 

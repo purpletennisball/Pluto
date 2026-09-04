@@ -1,10 +1,14 @@
 .tooltip, .graph-controls, .menu {
-	border-radius: var(--radius-xl);
-	backdrop-filter: var(--large-blur);
+	border-radius: var(--radius-l);
+	backdrop-filter: var(--small-blur);
 }
 
 .tooltip, .graph-controls {
 	background-color: var(--background-modifier-message) !important;
+}
+
+.theme-light .tooltip {
+	color: black;
 }
 
 .menu-item {
@@ -12,5 +16,5 @@
 }
 
 .tooltip-arrow {
-	opacity: 0;
+	display: none;
 }
