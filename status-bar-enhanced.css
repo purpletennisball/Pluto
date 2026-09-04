@@ -3,13 +3,24 @@
 }
 
 .status-bar {
-	--status-bar-radius: var(--radius-xl) !important;
-	--status-bar-border-width: 1px;
 	right: var(--radius-m);
 	bottom: var(--radius-m);
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
-	background-color: var(--emerald-background-secondary);
-	backdrop-filter: blur(10px);
+	box-shadow: var(--status-bar-shadow);
+	backdrop-filter: var(--status-bar-blur);
+	background-clip: padding-box;
+}
+
+.theme-light {
+	--status-bar-text-color: black;
+}
+
+body {
+	--status-bar-radius: var(--radius-xl) !important;
+	--status-bar-background: var(--emerald-background-secondary);
+	--status-bar-border-width: 2px;
+	--status-bar-border-color: var(--emerald-border-secondary);
+	--status-bar-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+	--status-bar-blur: var(--large-blur);
 }
 
 .status-bar-item {

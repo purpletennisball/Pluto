@@ -17,7 +17,8 @@ body {
 
 	--menu-background: rgb(from var(--background-secondary) r g b / 0.5);
 	--menu-border-color: rgb(from var(--background-modifier-border-hover) r g b / 0.5);
-	--emerald-background-secondary: rgba(var(--background-secondary), 0.5);
+	--emerald-background-secondary: rgb(from var(--background-secondary) r g b / 0.75);;
+	--emerald-border-secondary: rgb(from var(--background-secondary) r g b / 0.85);;
 
 	--metadata-label-width: 12em;
 }
