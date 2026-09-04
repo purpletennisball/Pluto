@@ -1,0 +1,15 @@
+body {
+	--callout-padding: 0;
+	--callout-title-padding: var(--size-4-3);
+	--callout-content-padding: 0 var(--size-4-3) var(--size-4-3) var(--size-4-3);
+}
+
+.callout-title {
+	--callout-title-background: rgb(var(--callout-color));
+	color: color-mix(in srgb, rgb(var(--callout-color)) 10%, var(--background-primary) 90%);
+	background: var(--callout-title-background);
+}
+
+.callout-icon .svg-icon {
+	color: color-mix(in srgb, rgb(var(--callout-color)) 10%, var(--background-primary) 90%);
+}

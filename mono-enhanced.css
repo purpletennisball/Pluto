@@ -1,0 +1,5 @@
+/* Enhanced look when using a monospaced font. */
+
+.cm-line {
+    white-space: pre-wrap;
+}

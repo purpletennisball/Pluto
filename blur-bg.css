@@ -1,0 +1,13 @@
+.modal-bg {
+	animation-name: blurBackgroundIn;
+	animation-fill-mode: forwards;
+	animation-duration: 300ms;
+	animation-timing-function: ease-out;
+	opacity: 100% !important;
+}
+
+.modal {
+	animation-name: slideIn;
+	animation-timing-function: ease-out;
+	animation-duration: 300ms;
+}

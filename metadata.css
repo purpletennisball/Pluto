@@ -1,0 +1,16 @@
+.metadata-property-key-input {
+	font-weight: 600 !important;
+}
+
+.metadata-property-key-input, .metadata-property-value, .metadata-properties-title, .multi-select-pill-content, .tag-pane-tag {
+	font-variation-settings: "wdth" 125;
+}
+
+.metadata-properties-title {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.multi-select-pill-content, .tag-pane-tag {
+	text-transform: uppercase;
+}

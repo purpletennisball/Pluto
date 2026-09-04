@@ -1,0 +1,12 @@
+body {
+	/* --inline-title-font: "FunnelDisplay-VariableFont_wght"; */
+	--inline-title-size: 2.5em;
+	--inline-title-weight: 250;
+}
+
+.inline-title {
+	border-width: 0px 0px 4px 0px;
+	border-style: solid;
+	border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.6);
+	font-variation-settings: "wdth" 80;
+}

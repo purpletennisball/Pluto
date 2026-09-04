@@ -1,0 +1,7 @@
+.tree-item-self {
+	padding: 3px 6px 3px var(--size-4-6) !important;
+}
+
+.nav-folder-title[data-count]::after {
+    color: var(--custom-clr);
+}

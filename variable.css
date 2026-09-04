@@ -1,0 +1,46 @@
+body {
+	--radius-xs: 4px;
+	--radius-s: 8px;
+	--radius-m: 12px;
+	--radius-l: 16px;
+	--radius-xl: 20px;
+
+	--modal-radius: var(--radius-xl);
+	--input-radius: var(--radius-xl);
+	--setting-items-radius: var(--radius-xl) !important;
+	--clickable-icon-radius: var(--radius-m);
+
+	--checkbox-radius: var(--radius-xs);
+
+	--input-shadow: none !important;
+	--input-shadow: none !important;
+
+	--menu-background: rgb(from var(--background-secondary) r g b / 0.5);
+	--menu-border-color: rgb(from var(--background-modifier-border-hover) r g b / 0.5);
+	--background-modifier-message: rgba(0,0,0,0.3) !important;
+	--emerald-background-secondary: rgba(var(--background-secondary), 0.5);
+
+	--metadata-label-width: 12em;
+}
+
+.theme-dark {
+	--background-primary: black !important;
+	--background-secondary: black !important;
+	--background-secondary-alt: black !important;
+
+	--large-blur: blur(20px) saturate(1.5) brightness(0.5);
+}
+
+.theme-light {
+	--large-blur: blur(20px) saturate(1.5) brightness(1.5);
+}
+
+@keyframes blurBackgroundIn {
+  from {backdrop-filter: blur(0px);}
+  to {backdrop-filter: blur(4px);}
+}
+
+@keyframes slideIn {
+  from {top: 100%;}
+  to {top: 0;}
+}
