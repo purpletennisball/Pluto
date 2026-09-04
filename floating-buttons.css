@@ -4,6 +4,12 @@ body {
 	--floating-buttons-border-color: var(--emerald-note-overlay-border-color);
 	--floating-buttons-shadow: var(--emerald-note-overlay-shadow);
 	--floating-buttons-blur: var(--large-blur);
+
+	--file-margin-top: var(--size-4-16);
+	--file-margin-right: var(--size-4-8);
+	--file-margin-bottom: var(--size-4-8);
+	--file-margin-left: var(--size-4-8);
+	--file-margins: var(--file-margin-top) var(--file-margin-right) var(--file-margin-bottom) var(--file-margin-left);
 }
 
 .view-header {
