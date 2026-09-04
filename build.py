@@ -16,6 +16,8 @@ try:
 except IndexError:
 	duplicateThemeDestination = None
 
+basePath = "dist"
+
 themeCSS = f"""/* -- {config["name"]} {config["version"]} -- */
 /* © {config["author"]} {config["year"]} */
 
@@ -34,7 +36,7 @@ for content in folderContents:
 	if content.endswith(".css"):
 		snippets.append(content)
 
-os.makedirs("dist", exist_ok=True)
+os.makedirs(basePath, exist_ok=True)
 
 for prioritySnippet in config["order"]:
 	prioritySnippetName = f"{prioritySnippet}.css"
@@ -45,10 +47,10 @@ for prioritySnippet in config["order"]:
 for snippet in snippets:
 	appendFile(snippet)
 
-with open(f'dist/theme.css', 'w', encoding='utf-8') as file:
+with open(f'{basePath}/theme.css', 'w', encoding='utf-8') as file:
     file.write(themeCSS)
 
-with open(f'dist/manifest.json', 'w', encoding='utf-8') as file:
+with open(f'{basePath}/manifest.json', 'w', encoding='utf-8') as file:
     json.dump(manifest, file)
 
 print("Theme built successfully")
