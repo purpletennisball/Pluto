@@ -1,16 +1,10 @@
 .modal-bg {
-	animation-name: blurBackgroundIn;
-	animation-fill-mode: forwards;
-	animation-duration: 300ms;
-	animation-timing-function: ease-out;
 	opacity: 100% !important;
+	animation: blurBackgroundIn 0.3s linear forwards, backgroundIn 0.3s linear;
 }
 
 body {
 	--background-modifier-cover: rgba(0,0,0,0.3) !important;
-}
-
-body {
 	--modal-sidebar-background: var(--background-primary-alt);
 	--modal-sidebar-group-background: var(--background-primary);
 	--modal-sidebar-group-padding: var(--size-2-2);
@@ -21,4 +15,28 @@ body {
 	background: var(--modal-sidebar-group-background);
 	padding: var(--modal-sidebar-group-padding);
 	border-radius: var(--modal-sidebar-group-border-radius);
+}
+
+.modal {
+	animation: scaleFadeIn 0.3s var(--emerald-smooth-timing) forwards;
+}
+
+@keyframes scaleFadeIn {
+	from {
+		scale: 0.75;
+		opacity: 0;
+	}
+	to {
+		scale: 1;
+		opacity: 1;
+	}
+}
+
+@keyframes backgroundIn {
+	from {
+		background-color: transparent;
+	}
+	to {
+		background-color: var(--background-modifier-cover);
+	}
 }
