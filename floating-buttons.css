@@ -59,3 +59,11 @@ body {
 .view-header *, .view-header-breadcrumb-separator {
     color: var(--color-base-100) !important;
 }
+
+.view-header-title-container {
+	width: min-content;
+	flex: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: var(--size-4-4);
+}
