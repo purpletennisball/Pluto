@@ -1,5 +1,7 @@
 .view-header {
 	background: transparent !important;
+	position: absolute;
+	width: 100%;
 }
 
 .view-header::before {
@@ -10,6 +12,7 @@
   	right: 0;
   	bottom: 0;
   	z-index: -1;
+	inset: 0;
 	background: transparent !important;
 
 	backdrop-filter: var(--large-blur);
@@ -22,13 +25,13 @@
 	margin: 4px;
 }
 
-.view-content {
+/*.view-content {
 	margin-top: calc(var(--titlebar-height, 40px) * -1.5);
 }
 
 .view-content > :first-child {
 	margin-top: calc(var(--titlebar-height, 40px) * 1.5);
-}
+}*/
 
 /*.inline-title {
 	margin-top: calc(var(--titlebar-height, 40px) * 1.5);
