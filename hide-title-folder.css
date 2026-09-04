@@ -7,6 +7,10 @@
 	color: var(--text-faint) !important;
 }
 
+.view-header-title-container:not(:hover) {
+	gap: 0;
+}
+
 .view-header-title-container:hover .view-header-title-parent {
 	width: min-content;
 }
