@@ -29,16 +29,12 @@ def appendFile(snippetName):
 
 folderContents = os.listdir(".")
 snippets = []
-dist = False
 
 for content in folderContents:
 	if content.endswith(".css"):
 		snippets.append(content)
-	if content == "dist":
-		dist = True
-        
-if not dist:
-	os.mkdir("dist")
+
+os.makedirs("dist", exist_ok=True)
 
 for prioritySnippet in config["order"]:
 	prioritySnippetName = f"{prioritySnippet}.css"
