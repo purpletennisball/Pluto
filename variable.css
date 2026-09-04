@@ -34,15 +34,15 @@ body {
 	--background-secondary-alt: black !important;
 	--background-modifier-message: rgba(0,0,0,0.5) !important;
 
-	--small-blur: blur(4px) saturate(1.25) brightness(0.75);
-	--large-blur: blur(20px) saturate(1.5) brightness(0.5);
+	--small-blur: blur(4px) saturate(1.25) brightness(1.1);
+	--large-blur: blur(20px) saturate(1.5) brightness(1.3);
 }
 
 .theme-light {
 	--background-modifier-message: rgba(255,255,255,0.3) !important;
 
 	--small-blur: blur(4px) saturate(1.1) brightness(1.1);
-	--large-blur: blur(20px) saturate(1.5) brightness(1.5);
+	--large-blur: blur(20px) saturate(1.5) brightness(1.1);
 }
 
 @keyframes blurBackgroundIn {
