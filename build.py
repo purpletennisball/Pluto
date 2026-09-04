@@ -39,10 +39,9 @@ def writeBuildContents(basePath: str):
 	with open(manifestLocation, 'w', encoding='utf-8') as file:
 		json.dump(manifest, file)
 
-folderContents = os.listdir(".")
 snippets = []
 
-for content in folderContents:
+for content in os.listdir("."):
 	if content.endswith(".css"):
 		snippets.append(content)
 
