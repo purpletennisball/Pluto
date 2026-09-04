@@ -1,0 +1,24 @@
+.modal-bg {
+	animation-name: blurBackgroundIn;
+	animation-fill-mode: forwards;
+	animation-duration: 300ms;
+	animation-timing-function: ease-out;
+	opacity: 100% !important;
+}
+
+body {
+	--background-modifier-cover: rgba(0,0,0,0.3) !important;
+}
+
+body {
+	--modal-sidebar-background: var(--background-primary-alt);
+	--modal-sidebar-group-background: var(--background-primary);
+	--modal-sidebar-group-padding: var(--size-2-2);
+	--modal-sidebar-group-border-radius: var(--radius-l);
+}
+
+.vertical-tab-header-group-items {
+	background: var(--modal-sidebar-group-background);
+	padding: var(--modal-sidebar-group-padding);
+	border-radius: var(--modal-sidebar-group-border-radius);
+}
