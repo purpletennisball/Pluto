@@ -1,10 +1,11 @@
 .tooltip, .graph-controls, .menu {
 	border-radius: var(--radius-l);
-	backdrop-filter: var(--small-blur);
-}
-
-.tooltip, .graph-controls {
-	background-color: var(--background-modifier-message) !important;
+	backdrop-filter: var(--emerald-note-overlay-blur);
+	background-color: var(--emerald-note-overlay-background) !important;
+	border-width: var(--emerald-note-overlay-border-width);
+	border-color: var(--emerald-note-overlay-border-color);
+	border-style: solid;
+	box-shadow: var(--emerald-note-overlay-shadow);
 }
 
 .theme-light .tooltip {
