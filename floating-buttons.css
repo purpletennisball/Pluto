@@ -12,13 +12,13 @@ body {
 	--file-margins: var(--file-margin-top) var(--file-margin-right) var(--file-margin-bottom) var(--file-margin-left);
 }
 
-.view-header {
+.view-header, .nav-header {
 	background: transparent !important;
 	position: absolute;
 	width: 100%;
 }
 
-.view-header::before {
+.view-header::before, .nav-header::before {
   	content: "";
   	position: absolute;
   	top: 0;
@@ -29,11 +29,11 @@ body {
 	inset: 0;
 	background: transparent !important;
 
-	backdrop-filter: var(--large-blur);
+	backdrop-filter: var(--large-blur) !important;
 	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
-.view-header-title-container, .view-header-left, .view-actions {
+.view-header-title-container, .view-header-left, .view-actions, .nav-buttons-container {
 	border-radius: var(--radius-xl);
 	backdrop-filter: var(--floating-buttons-blur);
 	background-color: var(--floating-buttons-background);
@@ -43,6 +43,30 @@ body {
 	box-shadow: var(--floating-buttons-shadow);
 	margin: 4px;
 }
+
+.nav-header {
+	height: min-content;
+    width: 100%;
+	margin: 0;
+	z-index: 1;
+}
+
+.nav-buttons-container {
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.backlink-pane,
+.tag-container,
+[data-type="all-properties"] .view-content,
+[data-type="outline"] .view-content,
+.nav-files-container,
+[data-type="bookmarks"] .view-content {
+	padding-top: 56px !important;
+}
+
+
 
 /*.view-content {
 	margin-top: calc(var(--titlebar-height, 40px) * -1.5);
