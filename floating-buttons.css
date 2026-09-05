@@ -92,7 +92,7 @@ body {
 	padding: var(--size-4-4);
 }
 
-.clickable-icon {
+.clickable-icon:not(:has(span)) {
 	aspect-ratio: 1;
 	border-radius: var(--radius-xl);
 	corner-shape: round;
