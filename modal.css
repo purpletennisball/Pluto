@@ -17,7 +17,7 @@ body {
 	border-radius: var(--modal-sidebar-group-border-radius);
 }
 
-.modal {
+.modal, .prompt {
 	animation: scaleFadeIn 0.3s var(--emerald-smooth-timing) forwards;
 }
 
