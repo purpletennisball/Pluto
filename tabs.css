@@ -1,0 +1,30 @@
+body {
+	--tab-radius: var(--radius-l) !important;
+	--tab-radius-active: var(--radius-l) !important;
+	--tab-corner-shape: round;
+}
+
+.workspace-tab-header::before, .workspace-tab-header::after {
+	display: none;
+}
+
+.workspace-tab-header-container .workspace-tab-header.is-active {
+	box-shadow: none;
+	border: solid var(--tab-outline-width) var(--tab-outline-color);
+}
+
+.workspace .mod-root .workspace-tab-header-inner::after {
+	display: none;
+}
+
+.workspace-tab-header {
+	padding: 1px 3px;
+	corner-shape: var(--tab-corner-shape) !important;
+	padding-bottom: 0px !important;
+}
+
+.mod-root .workspace-tab-header-container-inner {
+	padding: 0 15px 0 0 !important;
+	margin: 4px 0;
+
+}
