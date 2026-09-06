@@ -1,0 +1,27 @@
+/* @settings
+
+name: Emerald
+id: emerald
+settings:
+    - 
+        id: heading-color
+        title: Colored Heading Style
+        description: Style to use for coloring headings.
+        type: class-select
+        allowEmpty: false
+		default: heading-color-none
+        options:
+            - 
+                label: None
+				value: heading-color-none
+            - 
+                label: Dot
+				value: heading-color-dot
+            - 
+                label: Indicator
+				value: heading-color-indicator
+			-
+				label: Text
+				value: heading-color-text
+
+*/

@@ -6,6 +6,7 @@
 	"minAppVersion": "1.13.7",
 	"year": 2026,
 	"order": [
+		"style-settings",
 		"variable"
 	]
 }

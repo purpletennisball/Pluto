@@ -1,0 +1,87 @@
+body {
+	--indicator-size: 8px;
+}
+
+/* Heading Colors */
+.cm-header-1 {
+	--indicator-color: var(--accent-40);
+}
+
+.cm-header-2 {
+	--indicator-color: var(--accent-50);
+}
+
+.cm-header-3 {
+	--indicator-color: var(--accent-60);
+}
+
+.cm-header-4 {
+	--indicator-color: var(--accent-70);
+}
+
+.cm-header-5 {
+	--indicator-color: var(--accent-80);
+}
+
+.cm-header-6 {
+	--indicator-color: var(--accent-90);
+}
+
+/* Heading Colors when changing text color */
+.heading-color-text .cm-header-1 {
+	--indicator-color: var(--accent-30);
+}
+
+.heading-color-text .cm-header-2 {
+	--indicator-color: var(--accent-40);
+}
+
+.heading-color-text .cm-header-3 {
+	--indicator-color: var(--accent-50);
+}
+
+.heading-color-text .cm-header-4 {
+	--indicator-color: var(--accent-60);
+}
+
+.heading-color-text .cm-header-5 {
+	--indicator-color: var(--accent-65);
+}
+
+.heading-color-text .cm-header-6 {
+	--indicator-color: var(--accent-70);
+}
+
+.heading-color-dot {
+	--indicator-width: var(--indicator-size);
+	--indicator-height: var(--indicator-size);
+}
+
+.heading-color-indicator {
+	--indicator-width: var(--indicator-size);
+	--indicator-height: auto;
+}
+
+.cm-header {
+	display: inline-flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: stretch;
+}
+
+.heading-color-text .cm-header {
+	color: var(--indicator-color);
+}
+
+.heading-color-dot .cm-header:not(.cm-formatting-header)::before, .heading-color-indicator .cm-header:not(.cm-formatting-header)::before {
+	content: "";
+	display: inline-block;
+	width: var(--indicator-width);
+	height: var(--indicator-height);
+	background-color: var(--indicator-color);
+	border-radius: calc(var(--indicator-size) / 2);
+}
+
+.HyperMD-header {
+	align-content: center;
+}

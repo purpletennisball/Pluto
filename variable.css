@@ -26,6 +26,18 @@ body {
 	--emerald-note-overlay-border-color: var(--emerald-border-secondary);
 	--emerald-note-overlay-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
 	--emerald-note-overlay-blur: var(--large-blur);
+
+	--accent-10: hsl(var(--accent-h), var(--accent-s), 10%);
+	--accent-20: hsl(var(--accent-h), var(--accent-s), 20%);
+	--accent-30: hsl(var(--accent-h), var(--accent-s), 30%);
+    --accent-40: hsl(var(--accent-h), var(--accent-s), 40%);
+    --accent-50: hsl(var(--accent-h), var(--accent-s), 50%);
+    --accent-55: hsl(var(--accent-h), var(--accent-s), 55%);
+    --accent-60: hsl(var(--accent-h), var(--accent-s), 60%);
+    --accent-65: hsl(var(--accent-h), var(--accent-s), 65%);
+    --accent-70: hsl(var(--accent-h), var(--accent-s), 70%);
+    --accent-80: hsl(var(--accent-h), var(--accent-s), 80%);
+    --accent-90: hsl(var(--accent-h), var(--accent-s), 90%);
 }
 
 .theme-dark {
