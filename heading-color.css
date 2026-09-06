@@ -60,6 +60,7 @@ body {
 .heading-color-indicator {
 	--indicator-width: var(--indicator-size);
 	--indicator-height: auto;
+	--indicator-size: 4px;
 }
 
 .cm-header {
