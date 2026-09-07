@@ -60,6 +60,8 @@ body {
 	--pluto-neutral-0: #000000;
 
 	--color-gray: var(--pluto-neutral-40);
+
+	--code-radius: var(--radius-m);
 }
 
 .theme-dark {
@@ -69,6 +71,9 @@ body {
 	--background-secondary-alt: var(--pluto-neutral-5) !important;
 	--background-modifier-border: var(--pluto-neutral-15) !important;
 	--background-modifier-hover: var(--pluto-neutral-20) !important;
+
+	--text-muted: var(--pluto-neutral-80);
+	--text-faint: var(--pluto-neutral-60);
 
 	--background-modifier-message: rgba(0,0,0,0.5) !important;
 
@@ -81,9 +86,14 @@ body {
 	--background-primary-alt: var(--pluto-neutral-95) !important;
 	--background-secondary: var(--pluto-neutral-93) !important;
 	--background-secondary-alt: var(--pluto-neutral-95) !important;
-	--background-modifier-border: var(--pluto-neutral-85) !important;
+	--background-modifier-border: var(--pluto-neutral-90) !important;
 	--background-modifier-hover: var(--pluto-neutral-90) !important;
 	--background-modifier-message: rgba(255,255,255,0.3) !important;
+
+	--text-muted: var(--pluto-neutral-20);
+	--text-faint: var(--pluto-neutral-40);
+
+	--code-background: var(--pluto-neutral-100);
 
 	--small-blur: blur(4px) saturate(1.1) brightness(1.1);
 	--large-blur: blur(20px) saturate(1.5) brightness(1.1);
