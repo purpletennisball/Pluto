@@ -1,6 +1,6 @@
 .view-header-title-parent {
 	width: 0;
-	transition: width 0.25s var(--emerald-smooth-timing);
+	transition: width 0.25s var(--pluto-smooth-timing);
 }
 
 .view-header-title-parent * {

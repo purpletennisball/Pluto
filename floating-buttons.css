@@ -1,8 +1,8 @@
 body {
-	--floating-buttons-background: var(--emerald-note-overlay-background);
-	--floating-buttons-border-width: var(--emerald-note-overlay-border-width);
-	--floating-buttons-border-color: var(--emerald-note-overlay-border-color);
-	--floating-buttons-shadow: var(--emerald-note-overlay-shadow);
+	--floating-buttons-background: var(--pluto-note-overlay-background);
+	--floating-buttons-border-width: var(--pluto-note-overlay-border-width);
+	--floating-buttons-border-color: var(--pluto-note-overlay-border-color);
+	--floating-buttons-shadow: var(--pluto-note-overlay-shadow);
 	--floating-buttons-blur: var(--large-blur);
 
 	--file-margin-top: var(--size-4-16);

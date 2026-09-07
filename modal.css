@@ -18,7 +18,7 @@ body {
 }
 
 .modal, .prompt {
-	animation: scaleFadeIn 0.3s var(--emerald-smooth-timing) forwards;
+	animation: scaleFadeIn 0.3s var(--pluto-smooth-timing) forwards;
 }
 
 @keyframes scaleFadeIn {
