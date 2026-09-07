@@ -1,5 +1,7 @@
 .search-empty-state, .pane-empty {
 	display: flex;
+	flex-direction: column;
+	gap: 8px;
     justify-content: center;
     align-items: center;
 	min-height: 100px;
@@ -7,4 +9,19 @@
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	color: var(--text-normal);
+}
+
+.search-empty-state::before {
+	content: "";
+	height: var(--icon-xl);
+	width: var(--icon-xl);
+
+	background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>');
+}
+
+.search-empty-state::after {
+	content: "We searched far and wide. But, we couldn't find anything.";
+	color: var(--text-faint);
 }
