@@ -10,6 +10,8 @@ body {
 	--file-margin-bottom: var(--size-4-8);
 	--file-margin-left: var(--size-4-8);
 	--file-margins: var(--file-margin-top) var(--file-margin-right) var(--file-margin-bottom) var(--file-margin-left);
+
+	--view-header-height: auto !important;
 }
 
 .view-header, .nav-header {
@@ -59,6 +61,15 @@ body {
 	width: max-content;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.view-actions, .nav-buttons-container {
+	padding: 0 !important;
+}
+
+.is-mobile .view-action {
+	height: var(--touch-size-m);
+    width: var(--touch-size-m);
 }
 
 .backlink-pane,
