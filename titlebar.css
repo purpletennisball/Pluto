@@ -1,0 +1,4 @@
+body {
+	--titlebar-background-focused: var(--background-secondary) !important;
+	background-color: var(--background-secondary);
+}
