@@ -18,6 +18,10 @@ body {
 	width: 100%;
 }
 
+.view-header-nav-buttons {
+	--icon-size: var(--icon-m);
+}
+
 /*.view-header::before, .nav-header::before {
   	content: "";
   	position: absolute;
@@ -66,7 +70,10 @@ body {
 	padding-top: 56px !important;
 }
 
-
+.view-header {
+	padding: var(--size-4-2);
+	height: min-content;
+}
 
 /*.view-content {
 	margin-top: calc(var(--titlebar-height, 40px) * -1.5);
@@ -89,7 +96,7 @@ body {
 	flex: none;
 	margin-left: auto;
 	margin-right: auto;
-	padding: var(--size-4-4);
+	padding: 0 var(--size-4-4);
 }
 
 .clickable-icon:not(:has(span)) {
