@@ -1,70 +1,65 @@
 body {
 	/* This is to fix checkboxes not in editor such as dialogs, setting, ect. */
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6.453L4.60555 10L11 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	--checkbox-radius: var(--radius-xs);
+	--checkbox-size: var(--font-ui-large);
 }
 
+/* Done */
 .task-list-item[data-task="x"], .HyperMD-list-line[data-task="x"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6.453L4.60555 10L11 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 	--checkbox-color: var(--color-green);
 }
 
+/* Important */
 .task-list-item[data-task="!"], .HyperMD-list-line[data-task="!"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" width="2" height="9" rx="1" fill="white"/><circle cx="6" cy="11" r="1" fill="white"/></svg>');
 	--checkbox-color: var(--color-yellow);
 }
 
-.task-list-item[data-task="X"], .HyperMD-list-line[data-task="X"] {
-	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9.53554" y="1.05025" width="2" height="12" rx="1" transform="rotate(45 9.53554 1.05025)" fill="white"/><rect x="1.05025" y="2.46447" width="2" height="12" rx="1" transform="rotate(-45 1.05025 2.46447)" fill="white"/></svg>');
-	--checkbox-color: var(--color-red);
-	text-decoration: none !important; /* This is to remove the strikethrough given for finished tasks (x) */
-	color: var(--text-normal) !important; /* This is to remove the dark text given for finished tasks (x) */
-}
-
+/* Question */
 .task-list-item[data-task="?"], .HyperMD-list-line[data-task="?"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.87555 8V8C5.87555 7.24886 6.1444 6.52253 6.63345 5.9524L7.58697 4.84081C8.3258 3.97951 8.3258 2.708 7.58697 1.84669L7.52356 1.77276C6.6512 0.755788 5.08254 0.740605 4.19066 1.7405V1.7405C3.82881 2.14617 3.62885 2.67076 3.62885 3.21436V3.34375" stroke="white" stroke-width="2" stroke-linecap="round"/><circle cx="6" cy="11" r="1" fill="white"/></svg>');
 	--checkbox-color: var(--color-yellow);
 }
 
+/* Info */
 .task-list-item[data-task="i"], .HyperMD-list-line[data-task="i"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="1" r="1" fill="white"/><path d="M7.5 11V11C6.67157 11 6 10.3284 6 9.5V5.5C6 4.67157 5.32843 4 4.5 4V4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 	--checkbox-color: var(--color-blue);
 }
 
+/* Star */
 .task-list-item[data-task="*"], .HyperMD-list-line[data-task="*"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.38884 0.464302C5.58121 -0.154767 6.41879 -0.154768 6.61116 0.464301L7.58703 3.60481C7.67305 3.88166 7.91979 4.06911 8.19818 4.06911H11.3562C11.9787 4.06911 12.2375 4.90206 11.7339 5.28467L9.17902 7.22561C8.95379 7.39671 8.85955 7.70001 8.94558 7.97686L9.92144 11.1174C10.1138 11.7364 9.43619 12.2512 8.93257 11.8686L6.37772 9.92768C6.15249 9.75658 5.84751 9.75658 5.62228 9.92768L3.06743 11.8686C2.56381 12.2512 1.88619 11.7364 2.07855 11.1174L3.05442 7.97686C3.14045 7.70001 3.0462 7.39671 2.82098 7.22561L0.266126 5.28467C-0.237497 4.90206 0.0213303 4.06911 0.643842 4.06911H3.80181C4.08021 4.06911 4.32694 3.88166 4.41297 3.60481L5.38884 0.464302Z" fill="white"/></svg>');
 	--checkbox-color: var(--color-yellow);
 }
 
+/* Up */
 .task-list-item[data-task="u"], .HyperMD-list-line[data-task="u"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7L6 5L9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 	--checkbox-color: var(--color-blue);
 }
 
+/* Down */
 .task-list-item[data-task="d"], .HyperMD-list-line[data-task="d"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5L6 7L9 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 	--checkbox-color: var(--color-red);
 }
 
-.task-list-item[data-task="."], .HyperMD-list-line[data-task="."] {
-	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="6" fill="white"/></svg>');
-	--checkbox-color: var(--color-orange);
-}
-
-.task-list-item[data-task="o"], .HyperMD-list-line[data-task="o"] {
-	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" stroke="white" stroke-width="2"/></svg>');
-	--checkbox-color: var(--color-orange);
-}
-
+/* Incomplete */
 .task-list-item[data-task="/"], .HyperMD-list-line[data-task="/"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6658 1.9348L1.9348 11.6658C1.22081 12.3798 0 11.8741 0 10.8643V2.26676C0 1.01486 1.01486 0 2.26676 0H10.8643C11.8741 0 12.3798 1.22081 11.6658 1.9348Z" fill="white"/></svg>');
 	--checkbox-color: var(--color-orange);
 }
 
+/* Add */
 .task-list-item[data-task="+"], .HyperMD-list-line[data-task="+"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" width="2" height="12" rx="1" fill="white"/><rect y="7" width="2" height="12" rx="1" transform="rotate(-90 0 7)" fill="white"/></svg>');
 	--checkbox-color: var(--color-green);
 }
 
+/* Cancelled */
 .task-list-item[data-task="-"], .HyperMD-list-line[data-task="-"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="7" width="2" height="12" rx="1" transform="rotate(-90 0 7)" fill="white"/></svg>');
 	--checkbox-color: var(--color-red);
