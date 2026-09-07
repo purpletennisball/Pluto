@@ -21,10 +21,10 @@ body {
 
 	--emerald-smooth-timing: linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
 
-	--emerald-note-overlay-background: var(--emerald-background-secondary);
+	--emerald-note-overlay-background: rgb(from var(--background-secondary-alt) r g b / 0.75);
 	--emerald-note-overlay-border-width: 1px;
 	--emerald-note-overlay-border-color: var(--emerald-border-secondary);
-	--emerald-note-overlay-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+	--emerald-note-overlay-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
 	--emerald-note-overlay-blur: var(--large-blur);
 
 	--accent-10: hsl(var(--accent-h), var(--accent-s), 10%);
@@ -38,12 +38,33 @@ body {
     --accent-70: hsl(var(--accent-h), var(--accent-s), 70%);
     --accent-80: hsl(var(--accent-h), var(--accent-s), 80%);
     --accent-90: hsl(var(--accent-h), var(--accent-s), 90%);
+	
+	--pluto-neutral-100: #FFFFFF;
+	--pluto-neutral-98: #F9FAFB;
+    --pluto-neutral-95: #F0F2F5;
+	--pluto-neutral-93: #EAEDF0;
+	--pluto-neutral-91: #E4E8EC;
+    --pluto-neutral-90: #E1E6EA;
+	--pluto-neutral-85: #D2D9DF;
+	--pluto-neutral-80: #C4CCD4;
+    --pluto-neutral-60: #8F99A3;
+    --pluto-neutral-40: #5F666D;
+    --pluto-neutral-30: #494D50;
+    --pluto-neutral-25: #3D4042;
+    --pluto-neutral-20: #313335;
+	--pluto-neutral-15: #252627;
+	--pluto-neutral-10: #191A1A;
+	--pluto-neutral-5: #0D0D0D;
+	--pluto-neutral-0: #000000;
 }
 
 .theme-dark {
-	--background-primary: black !important;
-	--background-secondary: black !important;
-	--background-secondary-alt: black !important;
+	--background-primary: var(--pluto-neutral-0) !important;
+	--background-primary-alt: var(--pluto-neutral-5) !important;
+	--background-secondary: var(--pluto-neutral-10) !important;
+	--background-secondary-alt: var(--pluto-neutral-5) !important;
+	--background-modifier-border: var(--pluto-neutral-15) !important;
+
 	--background-modifier-message: rgba(0,0,0,0.5) !important;
 
 	--small-blur: blur(4px) saturate(1.25) brightness(1.1);
@@ -51,6 +72,12 @@ body {
 }
 
 .theme-light {
+	--background-primary: var(--pluto-neutral-98) !important;
+	--background-primary-alt: var(--pluto-neutral-95) !important;
+	--background-secondary: var(--pluto-neutral-93) !important;
+	--background-secondary-alt: var(--pluto-neutral-95) !important;
+	--background-modifier-border: var(--pluto-neutral-85) !important;
+
 	--background-modifier-message: rgba(255,255,255,0.3) !important;
 
 	--small-blur: blur(4px) saturate(1.1) brightness(1.1);

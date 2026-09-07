@@ -18,7 +18,7 @@ body {
 	width: 100%;
 }
 
-.view-header::before, .nav-header::before {
+/*.view-header::before, .nav-header::before {
   	content: "";
   	position: absolute;
   	top: 0;
@@ -31,7 +31,7 @@ body {
 
 	backdrop-filter: var(--large-blur) !important;
 	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
+}*/
 
 .view-header-title-container, .view-header-left, .view-actions, .nav-buttons-container {
 	border-radius: var(--radius-xl);
