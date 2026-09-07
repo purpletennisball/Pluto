@@ -62,7 +62,7 @@ body {
 /* Cancelled */
 .task-list-item[data-task="-"], .HyperMD-list-line[data-task="-"] {
 	--checkbox-icon: url('data:image/svg+xml; utf-8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="7" width="2" height="12" rx="1" transform="rotate(-90 0 7)" fill="white"/></svg>');
-	--checkbox-color: var(--color-red);
+	--checkbox-color: var(--color-gray);
 }
 
 .task-list-item-checkbox:checked {

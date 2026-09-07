@@ -57,6 +57,8 @@ body {
 	--pluto-neutral-10: #191A1A;
 	--pluto-neutral-5: #0D0D0D;
 	--pluto-neutral-0: #000000;
+
+	--color-gray: var(--pluto-neutral-40);
 }
 
 .theme-dark {
