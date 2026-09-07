@@ -1,10 +1,13 @@
 body {
-	--inline-title-size: 2.5em;
-	--inline-title-weight: 250;
+	--inline-title-size: 3em;
+	--inline-title-weight: 400;
+	--inline-title-underline-size: 4px;
+	--inline-title-underline-color: var(--accent-70);
+	--inline-title-underline-style: solid;
 }
 
 .inline-title {
-	border-width: 0px 0px 4px 0px;
-	border-style: solid;
-	border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.6);
+	border-width: 0px 0px var(--inline-title-underline-size) 0px;
+	border-style: var(--inline-title-underline-style);
+	border-color: var(--inline-title-underline-color);
 }
