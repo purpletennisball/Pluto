@@ -1,0 +1,9 @@
+.mod-root .workspace-tabs .workspace-leaf, .mod-root {
+	background-color: transparent !important;
+}
+
+.mod-root .view-content {
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0 !important;
+	overflow: hidden !important;
+	background-color: var(--background-primary) !important;
+}
