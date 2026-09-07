@@ -41,6 +41,7 @@ body {
     --accent-90: hsl(var(--accent-h), var(--accent-s), 90%);
 	
 	--pluto-neutral-100: #FFFFFF;
+	--pluto-neutral-99: #FCFCFD;
 	--pluto-neutral-98: #F9FAFB;
     --pluto-neutral-95: #F0F2F5;
 	--pluto-neutral-93: #EAEDF0;
