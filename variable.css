@@ -65,6 +65,9 @@ body {
 
 	--mobile-sidebar-background: var(--background-secondary) !important;
 	--interactive-normal: var(--background-secondary-alt) !important;
+
+	--ribbon-background-collapsed: var(--background-secondary) !important;
+	--tab-background-active: var(--background-primary) !important;
 }
 
 .theme-dark {

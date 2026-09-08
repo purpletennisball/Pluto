@@ -1,0 +1,11 @@
+.workspace-tab-header-container-inner {
+	background-color: var(--background-secondary-alt);
+	border-radius: var(--radius-xl);
+	padding: 0 !important;
+	margin-bottom: 8px !important;
+}
+
+.workspace-tab-header-inner {
+	padding: 0 !important;
+	aspect-ratio: 1;
+}
