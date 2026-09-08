@@ -22,7 +22,10 @@ themeCSS = f"""/* -- {config["name"]} {config["version"]} -- */
 /* © {config["author"]} {config["year"]} */
 
 """
-    
+
+def isSnippetExcluded(snippetBaseName: str):
+	return snippetBaseName in config["exclude"] or f"{snippetBaseName}.css" in config["exclude"]
+	    
 def appendFile(snippetName):
 	global themeCSS
 	with open(snippetName, 'r', encoding='utf-8') as file:
@@ -49,12 +52,13 @@ os.makedirs(basePath, exist_ok=True)
 
 for prioritySnippet in config["order"]:
 	prioritySnippetName = f"{prioritySnippet}.css"
-	if prioritySnippetName in snippets:
+	if prioritySnippetName in snippets and not isSnippetExcluded(prioritySnippet):
 		appendFile(prioritySnippetName)
 		snippets.pop(snippets.index(prioritySnippetName))
 
 for snippet in snippets:
-	appendFile(snippet)
+	if not isSnippetExcluded(snippet):
+		appendFile(snippet)
 
 writeBuildContents(basePath)
 
