@@ -62,6 +62,9 @@ body {
 	--color-gray: var(--pluto-neutral-40);
 
 	--code-radius: var(--radius-m);
+
+	--mobile-sidebar-background: var(--background-secondary) !important;
+	--interactive-normal: var(--background-secondary-alt) !important;
 }
 
 .theme-dark {
