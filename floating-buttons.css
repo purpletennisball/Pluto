@@ -24,7 +24,7 @@ body {
 	--icon-size: var(--icon-m);
 }
 
-/*.view-header::before, .nav-header::before {
+.nav-header::before {
   	content: "";
   	position: absolute;
   	top: 0;
@@ -33,11 +33,8 @@ body {
   	bottom: 0;
   	z-index: -1;
 	inset: 0;
-	background: transparent !important;
-
-	backdrop-filter: var(--large-blur) !important;
-	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}*/
+	background: linear-gradient(to bottom, var(--background-secondary) 0%, transparent 100%) !important;
+}
 
 .view-header-title-container, .view-header-left, .view-actions, .nav-buttons-container {
 	border-radius: var(--radius-xl);
