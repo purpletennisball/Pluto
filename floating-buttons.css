@@ -48,7 +48,7 @@ body {
 	background: linear-gradient(to bottom, var(--background-primary) 0%, transparent 100%) !important;
 }
 
-.view-header-title-container, .view-header-left, .view-actions, .nav-buttons-container {
+.view-header-title-container, .view-header-left, .view-actions, .nav-buttons-container, .side-dock-actions {
 	border-radius: var(--radius-xl);
 	backdrop-filter: var(--floating-buttons-blur);
 	background-color: var(--floating-buttons-background);
@@ -57,6 +57,14 @@ body {
 	border-style: solid;
 	box-shadow: var(--floating-buttons-shadow);
 	margin: 4px;
+}
+
+.clickable-icon.side-dock-ribbon-action {
+	margin: 0;
+}
+.clickable-icon.side-dock-ribbon-action .svg-icon {
+	width: var(--icon-m) !important;
+	height: var(--icon-m) !important;
 }
 
 .nav-header {
