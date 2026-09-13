@@ -24,16 +24,24 @@ body {
 	--icon-size: var(--icon-m);
 }
 
-.nav-header::before {
-  	content: "";
+.nav-header::before, .view-header::before {
+	content: "";
   	position: absolute;
   	top: 0;
   	left: 0;
   	right: 0;
   	bottom: 0;
   	z-index: -1;
-	inset: 0;
+   inset: 0;
+}
+
+.nav-header::before {
 	background: linear-gradient(to bottom, var(--background-secondary) 0%, transparent 100%) !important;
+}
+
+.view-header::before {
+	border-radius: var(--radius-xl) var(--radius-xl) 0 0 !important;
+	background: linear-gradient(to bottom, var(--background-primary) 0%, transparent 100%) !important;
 }
 
 .view-header-title-container, .view-header-left, .view-actions, .nav-buttons-container {
