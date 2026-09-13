@@ -39,6 +39,10 @@ body {
 	background: linear-gradient(to bottom, var(--background-secondary) 0%, transparent 100%) !important;
 }
 
+.mod-root .nav-header::before {
+	content: none;
+}
+
 .view-header::before {
 	border-radius: var(--radius-xl) var(--radius-xl) 0 0 !important;
 	background: linear-gradient(to bottom, var(--background-primary) 0%, transparent 100%) !important;
