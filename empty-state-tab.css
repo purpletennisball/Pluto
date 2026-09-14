@@ -1,0 +1,23 @@
+/* Remove Close Button */
+.empty-state-action.mod-close {
+	display: none;
+}
+
+.empty-state-action {
+	background-color: var(--button-accent-background);
+	color: var(--text-button-text-color);
+	border-radius: var(--radius-xl);
+	width: max-content;
+	padding: 0;
+	transition: color 0.3s var(--pluto-smooth-timing);
+}
+
+.empty-state-action:hover {
+	color: var(--text-button-text-color-hover);
+}
+
+.empty-state-action-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

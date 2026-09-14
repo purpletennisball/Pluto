@@ -39,7 +39,7 @@ body {
     --accent-70: hsl(var(--accent-h), var(--accent-s), 70%);
     --accent-80: hsl(var(--accent-h), var(--accent-s), 80%);
     --accent-90: hsl(var(--accent-h), var(--accent-s), 90%);
-	
+
 	--pluto-neutral-100: #FFFFFF;
 	--pluto-neutral-99: #FCFCFD;
 	--pluto-neutral-98: #F9FAFB;
@@ -85,6 +85,9 @@ body {
 
 	--small-blur: blur(4px) saturate(1.25) brightness(1.1);
 	--large-blur: blur(20px) saturate(1.5) brightness(1.3);
+
+	--text-button-text-color: var(--accent-40);
+	--text-button-text-color-hover: var(--accent-50);
 }
 
 .theme-light {
@@ -101,6 +104,9 @@ body {
 
 	--small-blur: blur(4px) saturate(1.1) brightness(1.1);
 	--large-blur: blur(20px) saturate(1.5) brightness(1.1);
+
+	--text-button-text-color: var(--accent-60);
+	--text-button-text-color-hover: var(--accent-50);
 }
 
 @keyframes blurBackgroundIn {
