@@ -1,0 +1,46 @@
+.theme-light {
+	--time-tag-color: var(--pluto-neutral-60);
+}
+
+.theme-dark {
+	--time-tag-color: var(--pluto-neutral-40);
+}
+
+.pluto-time-tag {
+	color: var(--time-tag-color);
+	/*padding: 4px 12px;*/
+}
+
+/*.markdown-source-view.mod-cm6 .cm-content > :has(span.pluto-time-tag) {
+	margin: 4px 0 4px 0 !important;
+
+}*/
+
+.pluto-time-tag {
+	/*margin: 4px 0 4px 0 !important;*/
+	margin-top: 4px !important;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: stretch;
+}
+
+.pluto-time-tag::before {
+	content: attr(data-time);
+}
+
+.pluto-time-tag::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background-color: var(--time-tag-color);
+}
+
+.cm-html-embed:has(.pluto-time-tag) {
+    display: inline-flex;
+    width: stretch;
+}
+
+.pluto-time-tag + br {
+	display: none;
+}
