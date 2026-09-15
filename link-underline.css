@@ -1,0 +1,46 @@
+body {
+	--link-underline-side: 1px;
+	--link-underline-sides: calc(var(--link-underline-side) * 2);
+	--link-underline-height: 2px;
+}
+
+.theme-light {
+	--link-color-hover: var(--accent-20);
+	--link-external-color-hover: var(--accent-20);
+	--link-unresolved-color: var(--accent-30);
+	--link-underline-color: var(--accent-80);
+}
+
+.theme-dark {
+	--link-color-hover: var(--accent-95);
+	--link-external-color-hover: var(--accent-95);
+	--link-unresolved-color: var(--accent-98);
+	--link-underline-color: var(--accent-40);
+}
+
+.cm-hmd-internal-link .cm-underline, .cm-link .cm-underline, .cm-line:hover, .cm-hmd-internal-link:hover {
+	text-decoration: none !important;
+	text-decoration-line: none !important;
+}
+
+.cm-hmd-internal-link, .cm-link {
+	position: relative;
+	/*font-weight: bold !important;*/
+	transition: color 0.1s linear;
+}
+
+.cm-hmd-internal-link::after, .cm-link::after {
+	content: "";
+	position: absolute;
+	background-color: var(--link-underline-color);
+	height: var(--link-underline-height);
+	width: calc(100% + var(--link-underline-sides));
+	z-index: -1;
+	bottom: 0;
+    left: calc(var(--link-underline-side) * -1);
+    transition: height 0.3s var(--pluto-smooth-timing);
+}
+
+.cm-hmd-internal-link:hover::after, .cm-link:hover::after {
+	height: calc(var(--font-text-size) + 2px);
+}
