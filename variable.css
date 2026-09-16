@@ -75,8 +75,8 @@ body {
 .theme-dark {
 	--background-primary: var(--pluto-neutral-0) !important;
 	--background-primary-alt: var(--pluto-neutral-5) !important;
-	--background-secondary: var(--pluto-neutral-10) !important;
-	--background-secondary-alt: var(--pluto-neutral-5) !important;
+	--background-secondary: var(--pluto-neutral-5) !important;
+	--background-secondary-alt: var(--pluto-neutral-10) !important;
 	--background-modifier-border: var(--pluto-neutral-15) !important;
 	--background-modifier-border-hover: var(--pluto-neutral-25) !important;
 	--background-modifier-hover: var(--pluto-neutral-20) !important;
