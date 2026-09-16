@@ -1,0 +1,17 @@
+body {
+	--input-border-width: 0px;
+	--background-modifier-form-field: var(--background-primary);
+}
+
+.theme-light {
+	--background-modifier-border-focus: var(--accent-80);
+}
+
+.theme-dark {
+	--background-modifier-border-focus: var(--accent-70);
+}
+
+.setting-group-filter {
+	border: none !important;
+	background-color: var(--background-primary);
+}
